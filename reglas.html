@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--===============================================================================================-->
+    <meta charset="utf-8">
+<!--===============================================================================================-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!--===============================================================================================-->
+    <meta name="robots" content="index, follow">
+<!--===============================================================================================-->
+    <meta name="googlebot" content="index">
+<!--===============================================================================================-->
+    <meta name="description" content="Juga al popular juego Dix Mille gratis!">
+<!--===============================================================================================-->
+    <meta name="keywords" content="dix mille juego, 10000 juego, diez mil juego">
+<!--===============================================================================================-->
+    <link rel="stylesheet" href="css/style.css">
+<!--===============================================================================================-->
+    <link rel="stylesheet" href="vendors/css/bootstrap.min.css">
+<!--===============================================================================================-->
+    <link rel="icon" href="img/1.png">
+<!--===============================================================================================-->
+    <title>Dix Mille</title>
+<!--===============================================================================================-->
+</head>
+<body>
+<!--===============================================================================================-->
+	<nav class="container-fluid text-center py-2 text-white bg-dark">
+		<div class="row">
+            <div class="col-3 col-md-4">
+                <a href="index.html" class="text-decoration-none text-white">
+                    <h5>Inicio</h5>
+                </a>
+            </div>
+            <div class="col-4 col-md-4">
+                <a href="reglas.html" class="text-decoration-none text-white">
+                    <h5>Reglas</h5>
+                </a>
+            </div>
+            <div class="col-5 col-md-4">
+                <a href="" class="text-decoration-none text-white" id="juego-nuevo">
+                    <h5>Juego Nuevo</h5>
+                </a>
+            </div>
+        </div>
+	</nav>
+    <main class="container text-center p-md-5">
+        <div class="mt-5 mt-md-0">
+            <h5>Objetivo:</h5>
+            <li class="list-unstyled">Llegar a los 10.000 puntos exactos</li>
+        </div>
+        <hr class="my-4">
+        <div class="mt-3">
+            <h5>Reglas</h5>
+            <ol class="list-group list-group-numbered mt-3">
+              <li class="py-1">El primero en llegar a 10.000 puntos exactos gana.</li>
+              <li class="py-1">Para "ingresar" al juego necesitas sacar 750 puntos en una ronda.</li>
+              <li class="py-1">Después de ingresar al juego, al hacer una tirada y que hagas más de 0 puntos podés elegir si querés continuar tirando los dados o plantarte y sumar los puntos obtenidos.</li>
+              <li class="py-1">Si elegiste seguir tirando los dados y no conseguís sumar puntos, los puntos que tenias pasan a ser 0 y tu turno termina.</li>
+              <li class="py-1">Los dados que contribuyeron a sumar puntos son separados en cada tirada hasta que se separen los cinco dados, en ese caso se vuelven a lanzar todos.</li>
+            </ol>
+        </div>
+        <div class="mt-5">
+            <h5>Tabla de puntos:</h5>
+            <table class="table table-striped table-hover mt-4 table-bordered">
+                <thead>
+                  <tr>
+                    <th scope="col">Caso:</th>
+                    <th scope="col">Dados:</th>
+                    <th scope="col">Puntos:</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Cinco unos</td>
+                    <td>
+                        <span class="border border-dark rounded bg-dark text-white p-1">1</span>
+                        <span class="border border-dark rounded bg-dark text-white p-1">1</span>
+                        <span class="border border-dark rounded bg-dark text-white p-1">1</span>
+                        <span class="border border-dark rounded bg-dark text-white p-1">1</span>
+                        <span class="border border-dark rounded bg-dark text-white p-1">1</span>
+                    </td>
+                    <td>Ganás Automaticamente</td>
+                  </tr>
+                  <tr>
+                    <td>Cuatro unos</td>
+                    <td>
+                        <span class="border border-dark rounded bg-dark text-white p-1">1</span>
+                        <span class="border border-dark rounded bg-dark text-white p-1">1</span>
+                        <span class="border border-dark rounded bg-dark text-white p-1">1</span>
+                        <span class="border border-dark rounded bg-dark text-white p-1">1</span>
+                    </td>
+                    <td>400</td>
+                  </tr>
+                  <tr>
+                    <td>Tres unos</td>
+                    <td>
+                        <span class="border border-dark rounded bg-dark text-white p-1">1</span>
+                        <span class="border border-dark rounded bg-dark text-white p-1">1</span>
+                        <span class="border border-dark rounded bg-dark text-white p-1">1</span>
+                    </td>
+                    <td>1.000</td>
+                  </tr>
+                  <tr>
+                    <td>Dos unos</td>
+                    <td>
+                        <span class="border border-dark rounded bg-dark text-white p-1">1</span>
+                        <span class="border border-dark rounded bg-dark text-white p-1">1</span>
+                    </td>
+                    <td>200</td>
+                  </tr>
+                  <tr>
+                    <td>Un uno</td>
+                    <td>
+                        <span class="border border-dark rounded bg-dark text-white p-1">1</span>
+                    </td>
+                    <td>100</td>
+                  </tr>
+                  <tr>
+                    <td>Cinco cincos</td>
+                    <td>
+                        <span class="border border-dark rounded bg-dark text-white p-1">5</span>
+                        <span class="border border-dark rounded bg-dark text-white p-1">5</span>
+                        <span class="border border-dark rounded bg-dark text-white p-1">5</span>
+                        <span class="border border-dark rounded bg-dark text-white p-1">5</span>
+                        <span class="border border-dark rounded bg-dark text-white p-1">5</span>
+                    </td>
+                    <td>250</td>
+                  </tr>
+                  <tr>
+                    <td>Cuatro cincos</td>
+                    <td>
+                        <span class="border border-dark rounded bg-dark text-white p-1">5</span>
+                        <span class="border border-dark rounded bg-dark text-white p-1">5</span>
+                        <span class="border border-dark rounded bg-dark text-white p-1">5</span>
+                        <span class="border border-dark rounded bg-dark text-white p-1">5</span>
+                    </td>
+                    <td>200</td>
+                  </tr>
+                  <tr>
+                    <td>Tres de cualquier numero</td>
+                    <td>
+                        <span class="border border-dark rounded bg-dark text-white p-1">2</span>
+                        <span class="border border-dark rounded bg-dark text-white p-1">2</span>
+                        <span class="border border-dark rounded bg-dark text-white p-1">2</span>
+                    </td>
+                    <td>Numero del dado * 100</td>
+                  </tr>
+                  <tr>
+                    <td>Dos cincos</td>
+                    <td>
+                        <span class="border border-dark rounded bg-dark text-white p-1">5</span>
+                        <span class="border border-dark rounded bg-dark text-white p-1">5</span>
+                    </td>
+                    <td>100</td>
+                  </tr>
+                  <tr>
+                    <td>Un cinco</td>
+                    <td>
+                        <span class="border border-dark rounded bg-dark text-white p-1">5</span>
+                    </td>
+                    <td>50</td>
+                  </tr>
+                  <tr>
+                    <td>Escalera ( 1 al 5 | 2 al 6 )</td>
+                    <td>
+                        <span class="border border-dark rounded bg-dark text-white p-1">1</span>
+                        <span class="border border-dark rounded bg-dark text-white p-1">2</span>
+                        <span class="border border-dark rounded bg-dark text-white p-1">3</span>
+                        <span class="border border-dark rounded bg-dark text-white p-1">4</span>
+                        <span class="border border-dark rounded bg-dark text-white p-1">5</span>
+                    </td>
+                    <td>750</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+    </main>
+<!--===============================================================================================-->
+    <script src="vendors/js/jquery-3.3.1.slim.min.js"></script>
+    <script src="vendors/js/popper.min.js"></script>
+    <script src="vendors/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+</body>
+</html>
